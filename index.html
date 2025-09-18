@@ -3,187 +3,681 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Compound Culture | Portfolio</title>
-    
-    <!-- Tailwind CSS for styling -->
-    <script src="https://cdn-tailwindcss.vercel.app/"></script>
-    
-    <!-- Google Fonts: Inter -->
+    <title>The Compound Culture - Finance • Tech • Geopolitics</title>
+    <link rel="stylesheet" href="stylefigma.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-orange-500 text-black">
-
-    <!-- The new grid background div -->
-    <div class="grid-background"></div>
-
-    <!-- Scrollable content wrapper -->
-    <div class="content-wrapper">
-
-        <!-- Minimalist Header -->
-        <header class="header-card fixed top-0 left-0 right-0 z-50">
-            <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-                <a href="#hero" class="text-xl font-bold tracking-tight">The Compound Culture</a>
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-6 text-gray-800">
-                     <a href="#finance" class="hover:text-black transition-colors duration-300">Finance</a>
-                     <a href="#geopolitics" class="hover:text-black transition-colors duration-300">Geopolitics</a>
-                     <a href="#growth" class="hover:text-black transition-colors duration-300">Growth Stories</a>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-800 hover:text-black focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                </div>
-            </nav>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden">
-                <a href="#finance" class="block py-2 px-6 text-gray-800 hover:bg-white/20">Finance</a>
-                <a href="#geopolitics" class="block py-2 px-6 text-gray-800 hover:bg-white/20">Geopolitics</a>
-                <a href="#growth" class="block py-2 px-6 text-gray-800 hover:bg-white/20">Growth Stories</a>
-            </div>
-        </header>
-        
-        <!-- Hero Section (Full Screen) -->
-        <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center p-6 relative">
-            <div class="max-w-4xl pt-16">
-                <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-                    Finance made simple, fun, and real.
-                </h1>
-                <p class="text-md md:text-lg text-gray-800 max-w-3xl mx-auto mt-4">
-                    Your hub for everything from finance and geopolitics to growth stories and side hustles.
-                </p>
-            </div>
-             <!-- Quick Nav Cards -->
-            <div class="mt-12 max-w-5xl mx-auto w-full">
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
-                    <a href="#finance" class="card rounded-lg p-4 text-center hover:scale-105 transform transition-transform duration-300">
-                        <h3 class="font-bold text-sm sm:text-base">Finance</h3>
-                    </a>
-                    <a href="#geopolitics" class="card rounded-lg p-4 text-center hover:scale-105 transform transition-transform duration-300">
-                        <h3 class="font-bold text-sm sm:text-base">Geopolitics</h3>
-                    </a>
-                    <a href="#growth" class="card rounded-lg p-4 text-center hover:scale-105 transform transition-transform duration-300">
-                        <h3 class="font-bold text-sm sm:text-base">Growth Stories</h3>
-                    </a>
-                    <a href="#reality" class="card rounded-lg p-4 text-center hover:scale-105 transform transition-transform duration-300">
-                        <h3 class="font-bold text-sm sm:text-base">Ground Reality</h3>
-                    </a>
-                    <a href="#hustles" class="card rounded-lg p-4 text-center hover:scale-105 transform transition-transform duration-300">
-                        <h3 class="font-bold text-sm sm:text-base">Side Hustles</h3>
-                    </a>
-                    <a href="#memes" class="card rounded-lg p-4 text-center hover:scale-105 transform transition-transform duration-300">
-                        <h3 class="font-bold text-sm sm:text-base">Memes</h3>
-                    </a>
-                    <a href="#simulations" class="card rounded-lg p-4 text-center hover:scale-105 transform transition-transform duration-300">
-                        <h3 class="font-bold text-sm sm:text-base">Simulations</h3>
-                    </a>
-                </div>
-            </div>
-            <!-- Scroll Down Icon -->
-            <a href="#finance" class="absolute bottom-10 animate-bounce">
-                <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </a>
-        </section>
-
-        <!-- Main Content Wrapper -->
-        <main class="px-6 md:px-8 py-24 md:py-32">
-            <div class="max-w-4xl mx-auto space-y-24 md:space-y-32">
-                
-                <!-- Finance Simplified Section -->
-                <section id="finance" class="card rounded-2xl p-6 md:p-12 text-left">
-                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">Finance Simplified 📈</h2>
-                    <p class="text-gray-800 text-base md:text-lg">
-                        <strong>Easy Breakdowns:</strong> From complex market concepts to snackable explainers. We break it all down for you.<br><br>
-                        <strong>Tips for Students:</strong> Master budgeting, learn investing basics, and discover savings hacks tailored for you.<br><br>
-                        <strong>Investment Guides:</strong> Explore guides on Mutual Funds, stocks, gold, bonds, PF, RD, and even crypto.
-                    </p>
-                </section>
-
-                <!-- Geopolitics & Macro Section -->
-                <section id="geopolitics" class="card rounded-2xl p-6 md:p-12 text-left">
-                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">Geopolitics & Macro 🌍</h2>
-                    <p class="text-gray-800 text-base md:text-lg">
-                        <strong>Global Policies Explained:</strong> Understand what the RBI or the Fed did and how it directly affects your wallet.<br><br>
-                        <strong>Impact on Daily Life:</strong> Connect the dots between oil prices, inflation, taxes, and your personal finances.<br><br>
-                        <strong>Quick Scenarios:</strong> What if China bans a major import tomorrow? We explore the potential ripple effects.
-                    </p>
-                </section>
-                
-                <!-- Other sections follow the same responsive pattern -->
-
-                <!-- Meet the Founders Section -->
-                <section id="founders" class="card rounded-2xl p-6 md:p-12 text-center">
-                    <h2 class="text-2xl md:text-4xl font-bold mb-12">Meet the Founders</h2>
-                    <div class="flex flex-col md:flex-row justify-center items-center space-y-12 md:space-y-0 md:space-x-16">
-                        <!-- New Founder: Ashay Anand -->
-                        <div class="flex flex-col items-center">
-                            <img src="Ashay2.jpeg" alt="Ashay Anand" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-lg mb-4">
-                            <h3 class="text-xl md:text-2xl font-bold">Ashay Anand</h3>
-                            <p class="text-gray-800">Founding Member</p>
-                            <a href="https://www.linkedin.com/in/ashay-anand-993537334/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-black text-white font-bold py-2 px-6 rounded-lg text-sm hover:bg-gray-800 transition-colors duration-300 shadow-lg">
-                                View LinkedIn
-                            </a>
-                        </div>
-                        <!-- Founder: Gurtej Singh -->
-                        <div class="flex flex-col items-center">
-                            <img src="Guru.jpeg" alt="Gurtej Singh" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-lg mb-4">
-                            <h3 class="text-xl md:text-2xl font-bold">Gurtej Singh</h3>
-                            <p class="text-gray-800">Founder</p>
-                             <a href="https://www.linkedin.com/in/gurtej-bhamrah/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-black text-white font-bold py-2 px-6 rounded-lg text-sm hover:bg-gray-800 transition-colors duration-300 shadow-lg">
-                                View LinkedIn
-                            </a>
-                        </div>
-                        <!-- Co-Founder: Keshav Kansal -->
-                        <div class="flex flex-col items-center">
-                            <img src="Keshav.jpeg" alt="Keshav Kansal" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-lg mb-4">
-                            <h3 class="text-xl md:text-2xl font-bold">Keshav Kansal</h3>
-                            <p class="text-gray-800">Founding Member</p>
-                            <a href="https://www.linkedin.com/in/keshav-kansal-50b22b299/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-black text-white font-bold py-2 px-6 rounded-lg text-sm hover:bg-gray-800 transition-colors duration-300 shadow-lg">
-                                View LinkedIn
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Community & Engagement Section -->
-                <section id="community" class="card rounded-2xl p-6 md:p-12 text-center">
-                    <h2 class="text-2xl md:text-4xl font-bold mb-6">Community & Engagement 👋</h2>
-                    <p class="text-gray-800 text-base md:text-lg max-w-2xl mx-auto">
-                        Join the conversation! Participate in comment-driven finance debates, submit your own memes, and join our "Ask Me Anything" sessions.
-                    </p>
-                    <div class="mt-8">
-                        <a href="#hero" class="inline-block bg-black text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-gray-800 transition-colors duration-300 shadow-lg">
-                            Get Involved
-                        </a>
-                    </div>
-                </section>
-
-            </div>
-        </main>
-        
-        <!-- Footer -->
-        <footer class="text-center p-6 md:p-8 text-gray-800">
-            <p>&copy; 2025 The Compound Culture. All Rights Reserved.</p>
-        </footer>
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="background-effects">
+        <div class="gradient-bg"></div>
+        <div class="grid-pattern"></div>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="accent-line"></div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Mobile menu toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        });
-    </script>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-header">
+                    <!-- Logo -->
+                    <div class="logo" onclick="scrollToSection('hero')">
+                        <div class="logo-icon">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">The Compound Culture</span>
+                            <span class="logo-subtitle">Finance • Tech • Geopolitics</span>
+                        </div>
+                    </div>
 
+                    <!-- Desktop Menu -->
+                    <div class="nav-menu">
+                        <button onclick="scrollToSection('finance')" class="nav-link">Finance</button>
+                        <button onclick="scrollToSection('geopolitics')" class="nav-link">Geopolitics</button>
+                        <button onclick="scrollToSection('growth')" class="nav-link">Growth Stories</button>
+                        <button onclick="scrollToSection('tech')" class="nav-link">Technology</button>
+                        <button onclick="scrollToSection('founders')" class="nav-link">About</button>
+                        <button class="cta-button">Subscribe</button>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                        <i data-lucide="x" class="close-icon hidden"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-menu">
+                    <div class="mobile-menu-content">
+                        <button onclick="scrollToSection('finance')" class="mobile-nav-link">
+                            <span>Finance</span>
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                        <button onclick="scrollToSection('geopolitics')" class="mobile-nav-link">
+                            <span>Geopolitics</span>
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                        <button onclick="scrollToSection('growth')" class="mobile-nav-link">
+                            <span>Growth Stories</span>
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                        <button onclick="scrollToSection('tech')" class="mobile-nav-link">
+                            <span>Technology</span>
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                        <button onclick="scrollToSection('founders')" class="mobile-nav-link">
+                            <span>About</span>
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                        <button class="mobile-cta-button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <!-- Badge -->
+                <div class="hero-badge">
+                    <div class="status-dot"></div>
+                    <span>Live Intelligence Platform</span>
+                </div>
+
+                <!-- Main Heading -->
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Navigate the Future of
+                        <span class="hero-gradient-text">Global Markets</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        In-depth analysis at the intersection of finance, technology, geopolitics, and innovation. 
+                        For decision-makers who need to stay ahead.
+                    </p>
+                </div>
+
+                <!-- Feature Grid -->
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i data-lucide="bar-chart-3"></i>
+                        <span>Markets & Finance</span>
+                    </div>
+                    <div class="feature-item">
+                        <i data-lucide="globe"></i>
+                        <span>Global Affairs</span>
+                    </div>
+                    <div class="feature-item">
+                        <i data-lucide="trending-up"></i>
+                        <span>Growth Stories</span>
+                    </div>
+                    <div class="feature-item">
+                        <i data-lucide="zap"></i>
+                        <span>Tech Innovation</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-actions">
+                    <button class="primary-button" onclick="scrollToSection('finance')">
+                        <span>Explore Content</span>
+                        <i data-lucide="arrow-down"></i>
+                    </button>
+                    <button class="secondary-button">Subscribe to Updates</button>
+                </div>
+
+                <!-- Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Articles</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50k+</div>
+                        <div class="stat-label">Readers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Updates</div>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <button onclick="scrollToSection('finance')" class="scroll-button">
+                        <span>Scroll to explore</span>
+                        <i data-lucide="arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Finance Section -->
+        <section id="finance" class="content-section">
+            <div class="section-container">
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="section-badge finance-badge">
+                            <i data-lucide="dollar-sign"></i>
+                            <span>Financial Markets</span>
+                        </div>
+                        <h2>Finance & Markets</h2>
+                        <p>Deep insights into market trends, investment strategies, and financial innovations</p>
+                    </div>
+
+                    <div class="section-grid">
+                        <div class="content-column">
+                            <div class="feature-card">
+                                <div class="feature-header">
+                                    <div class="feature-icon blue-gradient">
+                                        <i data-lucide="trending-up"></i>
+                                    </div>
+                                    <h3 class="blue-text">Market Analysis</h3>
+                                </div>
+                                <p>Deep dives into market trends, investment strategies, and financial innovations that are reshaping the global economy.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-header">
+                                    <div class="feature-icon purple-gradient">
+                                        <i data-lucide="bar-chart-3"></i>
+                                    </div>
+                                    <h3 class="purple-text">Investment Insights</h3>
+                                </div>
+                                <p>Expert perspectives on emerging opportunities, risk management, and the future of finance in a digital world.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-header">
+                                    <div class="feature-icon pink-gradient">
+                                        <i data-lucide="pie-chart"></i>
+                                    </div>
+                                    <h3 class="pink-text">Portfolio Strategy</h3>
+                                </div>
+                                <p>Advanced portfolio management techniques and diversification strategies for modern investors.</p>
+                            </div>
+                        </div>
+
+                        <div class="image-column">
+                            <div class="image-container">
+                                <div class="image-glow blue-purple-glow"></div>
+                                <img src="https://images.unsplash.com/flagged/photo-1579225818168-858da8667fae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx8fDE3NTc2OTg1MTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Finance and trading charts" class="section-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Geopolitics Section -->
+        <section id="geopolitics" class="content-section">
+            <div class="section-container">
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="section-badge geopolitics-badge">
+                            <i data-lucide="map"></i>
+                            <span>Global Affairs</span>
+                        </div>
+                        <h2>Geopolitics & Global Affairs</h2>
+                        <p>Analyzing the complex interplay between politics, economics, and global power dynamics</p>
+                    </div>
+
+                    <div class="section-grid reverse">
+                        <div class="image-column">
+                            <div class="image-container">
+                                <div class="image-glow purple-pink-glow"></div>
+                                <img src="https://images.unsplash.com/photo-1742415105376-43d3a5fd03fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx8MTc1Nzc4MjgwMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="World map and geopolitics" class="section-image">
+                            </div>
+                        </div>
+
+                        <div class="content-column">
+                            <p class="section-description">
+                                In an interconnected world, understanding geopolitical dynamics is crucial for making informed decisions. 
+                                Our analysis covers emerging power structures, trade relationships, and the impact of political decisions on global markets.
+                            </p>
+                            
+                            <div class="info-card">
+                                <h4>Key Focus Areas</h4>
+                                <ul class="focus-list">
+                                    <li>
+                                        <div class="list-dot blue-dot"></div>
+                                        <span>International trade and economic policy</span>
+                                    </li>
+                                    <li>
+                                        <div class="list-dot purple-dot"></div>
+                                        <span>Regional conflicts and their global impact</span>
+                                    </li>
+                                    <li>
+                                        <div class="list-dot pink-dot"></div>
+                                        <span>Emerging markets and developing economies</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card-center">
+                            <div class="feature-icon-large blue-gradient">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <h3>Global Trends</h3>
+                            <p>Understanding the forces shaping international relations</p>
+                        </div>
+
+                        <div class="feature-card-center">
+                            <div class="feature-icon-large purple-gradient">
+                                <i data-lucide="trending-up"></i>
+                            </div>
+                            <h3>Economic Impact</h3>
+                            <p>How political events influence global markets</p>
+                        </div>
+
+                        <div class="feature-card-center">
+                            <div class="feature-icon-large pink-gradient">
+                                <i data-lucide="eye"></i>
+                            </div>
+                            <h3>Future Outlook</h3>
+                            <p>Predictions and scenarios for tomorrow's world</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Growth Section -->
+        <section id="growth" class="content-section">
+            <div class="section-container">
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="section-badge growth-badge">
+                            <i data-lucide="rocket"></i>
+                            <span>Success Stories</span>
+                        </div>
+                        <h2>Growth Stories</h2>
+                        <p>Inspiring narratives of companies, individuals, and ideas that are changing the world through innovation and determination</p>
+                    </div>
+
+                    <div class="section-grid">
+                        <div class="content-column">
+                            <div class="growth-card">
+                                <h3>The Growth Mindset</h3>
+                                <p>Every successful venture starts with a vision and the courage to pursue it. We explore the journeys of those who dared to dream big and the strategies that transformed their ideas into reality.</p>
+                                <div class="profile-section">
+                                    <div class="profile-avatars">
+                                        <div class="avatar blue-gradient"></div>
+                                        <div class="avatar purple-gradient"></div>
+                                        <div class="avatar pink-gradient"></div>
+                                    </div>
+                                    <span class="profile-text">100+ Success Stories</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image-column">
+                            <div class="image-container">
+                                <div class="image-glow green-blue-glow"></div>
+                                <img src="https://images.unsplash.com/photo-1586448317606-cb1ec00298fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx8MTc1Nzc4MjgwMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Startup growth and success charts" class="section-image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-grid">
+                        <div class="story-card">
+                            <div class="story-icon blue-gradient">
+                                <i data-lucide="rocket"></i>
+                            </div>
+                            <h4>Startup Success</h4>
+                            <p>From garage to global: stories of entrepreneurial triumph</p>
+                        </div>
+
+                        <div class="story-card">
+                            <div class="story-icon purple-gradient">
+                                <i data-lucide="lightbulb"></i>
+                            </div>
+                            <h4>Innovation Leaders</h4>
+                            <p>Profiles of visionaries driving technological advancement</p>
+                        </div>
+
+                        <div class="story-card">
+                            <div class="story-icon pink-gradient">
+                                <i data-lucide="building"></i>
+                            </div>
+                            <h4>Market Disruptors</h4>
+                            <p>Companies reshaping entire industries</p>
+                        </div>
+
+                        <div class="story-card">
+                            <div class="story-icon green-gradient">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <h4>Scaling Stories</h4>
+                            <p>How teams and cultures evolve during rapid growth</p>
+                        </div>
+                    </div>
+
+                    <div class="section-cta">
+                        <button class="green-blue-button">Explore All Stories</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Section -->
+        <section id="tech" class="content-section">
+            <div class="section-container">
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="section-badge tech-badge">
+                            <i data-lucide="cpu"></i>
+                            <span>Innovation Hub</span>
+                        </div>
+                        <h2>Technology & Innovation</h2>
+                        <p>Exploring cutting-edge technologies, their implications for society, and the opportunities they create for forward-thinking investors and entrepreneurs</p>
+                    </div>
+
+                    <div class="section-grid">
+                        <div class="image-column">
+                            <div class="image-container">
+                                <div class="image-glow blue-purple-glow"></div>
+                                <img src="https://images.unsplash.com/photo-1568952433726-3896e3881c65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx8MTc1NzY4MzE1NnwwA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Technology and innovation" class="section-image">
+                            </div>
+                        </div>
+
+                        <div class="content-column">
+                            <div class="tech-card">
+                                <h3 class="blue-text">The Innovation Ecosystem</h3>
+                                <p>Technology is reshaping every aspect of our lives. From artificial intelligence revolutionizing decision-making to quantum computing promising unprecedented computational power, we stand at the threshold of a new era.</p>
+                                <div class="pulse-indicators">
+                                    <div class="pulse-dots">
+                                        <div class="pulse-dot" style="animation-delay: 0.2s;"></div>
+                                        <div class="pulse-dot" style="animation-delay: 0.4s;"></div>
+                                        <div class="pulse-dot" style="animation-delay: 0.6s;"></div>
+                                        <div class="pulse-dot" style="animation-delay: 0.8s;"></div>
+                                        <div class="pulse-dot" style="animation-delay: 1s;"></div>
+                                    </div>
+                                    <span class="blue-text">Continuous Innovation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-grid">
+                        <div class="tech-column">
+                            <h3 class="blue-text">Emerging Technologies</h3>
+                            <div class="tech-list">
+                                <div class="tech-item">
+                                    <div class="tech-icon blue-bg">
+                                        <i data-lucide="brain"></i>
+                                    </div>
+                                    <span>Artificial Intelligence & Machine Learning</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon purple-bg">
+                                        <i data-lucide="database"></i>
+                                    </div>
+                                    <span>Blockchain & Cryptocurrency</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon pink-bg">
+                                        <i data-lucide="atom"></i>
+                                    </div>
+                                    <span>Quantum Computing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-column">
+                            <h3 class="purple-text">Impact Areas</h3>
+                            <div class="tech-list">
+                                <div class="tech-item">
+                                    <div class="tech-icon green-bg">
+                                        <i data-lucide="shield"></i>
+                                    </div>
+                                    <span>Healthcare & Biotechnology</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon yellow-bg">
+                                        <i data-lucide="zap"></i>
+                                    </div>
+                                    <span>Sustainable Energy</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon red-bg">
+                                        <i data-lucide="cpu"></i>
+                                    </div>
+                                    <span>Space Technology</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-cta">
+                        <div class="cta-card">
+                            <h4>Stay Ahead of the Curve</h4>
+                            <p>Subscribe to our technology insights to receive the latest analysis on emerging trends and breakthrough innovations.</p>
+                            <button class="blue-purple-button">Get Tech Updates</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founders Section -->
+        <section id="founders" class="content-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge founders-badge">
+                        <i data-lucide="users"></i>
+                        <span>Leadership Team</span>
+                    </div>
+                    <h2>Meet the Founders</h2>
+                    <p>Experienced professionals driving innovation at the intersection of finance, technology, and global markets.</p>
+                </div>
+
+                <div class="founders-grid">
+                    <div class="founder-card">
+                        <div class="founder-image-container">
+                            <div class="founder-border"></div>
+                            <img src="Ashay2.jpeg" alt="Ashay Anand" class="founder-image">
+                            <div class="status-indicator green-bg"></div>
+                        </div>
+                        <div class="founder-content">
+                            <h3>Ashay Anand</h3>
+                            <div class="founder-title blue-text">Founding Member</div>
+                            <div class="founder-expertise"> Technical Strategist</div>
+                            <p>Strategic analyst focused on financial markets and emerging technologies. Brings deep expertise in market dynamics and technological disruption.</p>
+                            <a href="https://www.linkedin.com/in/ashay-anand-993537334/" target="_blank" class="linkedin-button">
+                                <i data-lucide="linkedin"></i>
+                                <span>Connect</span>
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="founder-card">
+                        <div class="founder-image-container">
+                            <div class="founder-border"></div>
+                            <img src="Guru.jpeg" alt="Gurtej Singh" class="founder-image">
+                            <div class="status-indicator green-bg"></div>
+                        </div>
+                        <div class="founder-content">
+                            <h3>Gurtej Singh</h3>
+                            <div class="founder-title blue-text">Founder</div>
+                            <div class="founder-expertise">Global Economics • Geopolitical Analysis</div>
+                            <p>Visionary leader with expertise in global economics and geopolitical analysis. Passionate about the intersection of technology and global markets.</p>
+                            <a href="https://www.linkedin.com/in/gurtej-bhamrah/" target="_blank" class="linkedin-button">
+                                <i data-lucide="linkedin"></i>
+                                <span>Connect</span>
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="founder-card">
+                        <div class="founder-image-container">
+                            <div class="founder-border"></div>
+                            <img src="Keshav.jpeg" alt="Keshav Kansal" class="founder-image">
+                            <div class="status-indicator green-bg"></div>
+                        </div>
+                        <div class="founder-content">
+                            <h3>Keshav Kansal</h3>
+                            <div class="founder-title blue-text">Founding Member</div>
+                            <div class="founder-expertise">Growth Strategy • Digital Innovation</div>
+                            <p>Growth strategist and innovation expert specializing in scaling businesses and emerging market opportunities in the digital economy.</p>
+                            <a href="https://www.linkedin.com/in/keshav-kansal-50b22b299/" target="_blank" class="linkedin-button">
+                                <i data-lucide="linkedin"></i>
+                                <span>Connect</span>
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <div class="contact-card">
+                        <h4>Get in Touch</h4>
+                        <p>Interested in collaboration, partnership opportunities, or have questions about our analysis? We'd love to hear from you.</p>
+                        <div class="contact-actions">
+                            <button class="contact-button">
+                                <i data-lucide="mail"></i>
+                                <span>Contact Us</span>
+                            </button>
+                            <button class="newsletter-button">Subscribe to Newsletter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-card">
+                <div class="footer-header">
+                    <div class="footer-badge">
+                        <i data-lucide="bell"></i>
+                        <span>Join Our Community</span>
+                    </div>
+                    <h3>Stay Connected</h3>
+                    <p>Join our community of forward-thinking individuals exploring the future of finance, technology, and global culture.</p>
+                </div>
+
+                <div class="newsletter-section">
+                    <div class="email-input">
+                        <i data-lucide="mail"></i>
+                        <input type="email" placeholder="Enter your email address">
+                    </div>
+                    <button class="subscribe-button">
+                        <span>Subscribe</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="footer-features">
+                    <div class="footer-feature">
+                        <div class="footer-feature-icon blue-gradient">
+                            <span>F</span>
+                        </div>
+                        <h4>Finance Insights</h4>
+                        <p>Weekly market analysis and investment strategies</p>
+                    </div>
+                    <div class="footer-feature">
+                        <div class="footer-feature-icon purple-gradient">
+                            <span>G</span>
+                        </div>
+                        <h4>Global Affairs</h4>
+                        <p>Geopolitical analysis and economic implications</p>
+                    </div>
+                    <div class="footer-feature">
+                        <div class="footer-feature-icon pink-gradient">
+                            <span>T</span>
+                        </div>
+                        <h4>Tech Trends</h4>
+                        <p>Innovation updates and emerging technologies</p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 The Compound Culture. All rights reserved.</p>
+                        <div class="footer-links">
+                            <a href="#">Privacy</a>
+                            <a href="#">Terms</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+// Mobile menu toggle
+function toggleMobileMenu() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuIcon = document.querySelector('.menu-icon');
+    const closeIcon = document.querySelector('.close-icon');
+    
+    mobileMenu.classList.toggle('active');
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+}
+
+// Smooth scrolling to sections
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        
+        // Close mobile menu if open
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const menuIcon = document.querySelector('.menu-icon');
+        const closeIcon = document.querySelector('.close-icon');
+        
+        if (mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.remove('active');
+            menuIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+        }
+    }
+}
+
+// Navbar background on scroll
+function handleNavbarScroll() {
+    const nav = document.querySelector('.navigation');
+    const navContent = document.querySelector('.nav-content');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navContent.style.background = 'rgba(255, 255, 255, 0.05)';
+            navContent.style.borderColor = 'rgba(255, 255, 255, 0.15)';
+        } else {
+            navContent.style.background = 'var(--glass-bg)';
+            navContent.style.borderColor = 'var(--glass-border)';
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    handleNavbarScroll();
+});
+</script>
+<script src="script.js"></script>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>
